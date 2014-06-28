@@ -71,9 +71,9 @@ switch (command) {
     posts.finder();
     break;
 
-  // Cd into the posts directory
-  case 'cd':
-    posts.cd();
+  // Show the current posts dir
+  case 'dir':
+    posts.dir();
     break;
 
   // Display all posts
