@@ -57,6 +57,13 @@ cli
   .version('0.0.1')
   .parse(process.argv);
 
+
+/**
+ * Command parser. This switch statement basically acts like a router in a
+ * classic web application. The command that's passed via the command line will
+ * determine which action is called. All the real business logic lives in
+ * lib/posts.js.
+ */
 switch (command) {
 
   // Create new post
@@ -91,6 +98,11 @@ switch (command) {
   case 'edit':
   case 'open':
     posts.edit(args);
+    break;
+
+  case 'publish':
+  case 'push':
+    posts.publish();
     break;
 
   // Display help
