@@ -94,6 +94,11 @@ switch (command) {
     posts.find(args);
     break;
 
+  // Open image directory
+  case 'image':
+    posts.image();
+    break;
+
   // Edit post
   case 'edit':
   case 'open':
