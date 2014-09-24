@@ -30,9 +30,18 @@ Mac (with Homebrew):
 
 Ubuntu:
 
+Here's a [great installation article from Digital Ocean.][do]
+
+[do]: https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-an-ubuntu-14-04-server
+
+## Configuration
+
+jekyll-post supports a `.postrc` file in your root directory. This file is necessary to tell jekyll-post where your Jekyll blog is located. Here's an example of `~/.postrc`:
+
 ```
-sudo apt-get install nodejs
-sudo apt-get install npm
+{
+  "source": "/path/to/jekyll"
+}
 ```
 
 Enjoy.
