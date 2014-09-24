@@ -19,7 +19,12 @@ var utils = {
   errorOut: function(message) {
     console.error(message);
     process.exit(1);
-  }
+  },
+
+  fileNotFound: "No .postrc file found. Please createa a postrc file. Example:" +
+                "\n" +
+                '    $ echo \'{ "source": "/path/to/jekyll" }\' > ~/.postrc' +
+                "\n"
 
 };
 
@@ -35,7 +40,7 @@ var HOME = process.env.HOME || process.env.USERPROFILE,
 try {
   config = JSON.parse(fs.readFileSync(HOME + "/.postrc"));
 } catch (e) {
-  utils.errorOut(e.message);
+  utils.errorOut(utils.fileNotFound);
 }
 
 /**
