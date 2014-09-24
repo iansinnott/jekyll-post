@@ -38,7 +38,7 @@ var HOME = process.env.HOME || process.env.USERPROFILE,
  * Read the config file. If no file present, error out.
  */
 try {
-  config = JSON.parse(fs.readFileSync(HOME + "/.postrc"));
+  config = JSON.parse(fs.readFileSync(path.join(HOME, '.postrc')));
 } catch (e) {
   utils.errorOut(utils.fileNotFound);
 }
@@ -59,7 +59,7 @@ var command = process.argv[2],
 
 // Set up command line interface
 cli
-  .version('0.0.1')
+  .version('0.1.0')
   .parse(process.argv);
 
 
