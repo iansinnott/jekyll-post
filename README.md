@@ -2,6 +2,12 @@
 
 #### A simple command line helper for Jekyll
 
+## To do
+
+- Add drafting functionality
+
+`$ post draft <title>` Should create a draft post that will be stored under `drafts`. `$ post publish <title>` to prepend the date to the file and move it to to `_posts`. `$ post unpublish <title>` could be an option as well.
+
 ## Usage
 
 Create a post:
