@@ -4,21 +4,20 @@
 
 ## Usage
 
-- Add drafting functionality
-
+__Create draft:__
 `$ post draft <title>` Should create a draft post that will be stored under `drafts`. `$ post publish <title>` to prepend the date to the file and move it to to `_posts`. `$ post unpublish <title>` could be an option as well.
 
 
-Create a post:
+__Create a post:__
 `post Some Post Title`
 
-List all posts
+__List all posts__
 `post list`
 
-Edit a post
+__Edit a post__
 `post edit [some-post-title]`
 
-Publish your blog
+__Publish your blog__
 `post publish`
 
 ## Installation
