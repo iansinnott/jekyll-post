@@ -11,7 +11,16 @@ __Create draft:__
 
 __Create a post:__
 
-`post Some Post Title`
+`post [new|create] Some Post Title`
+
+__Create a draft:__
+
+`post draft Some Post Title`
+
+
+__Publish a draft:__
+
+`post publish Post Title To Publish`
 
 __List all posts__
 
@@ -21,9 +30,9 @@ __Edit a post__
 
 `post edit [some-post-title]`
 
-__Publish your blog__
+__Push your blog to GitHub__
 
-`post publish`
+`post push`
 
 ## Installation
 
@@ -56,7 +65,8 @@ jekyll-post supports a `.postrc` file in your root directory. This file is neces
   	"layout":"post",
   	"author": "your name",
   	"categories": ""
-  } 
+  },
+   "pushOnPublish": true //if set to false, it won't directly push when you publish a draft
 }
 ```
 
