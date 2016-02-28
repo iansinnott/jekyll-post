@@ -4,7 +4,11 @@
   "description": "A Simple Command Line Helper for Jekyll",
   "main": "post.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bump:patch": "npm version patch -m \"v%s\"",
+    "bump:minor": "npm version minor -m \"v%s\"",
+    "bump": "npm run bump:patch",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
