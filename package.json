@@ -25,7 +25,14 @@
   "homepage": "https://github.com/iansinnott/jekyll-post",
   "dependencies": {
     "commander": "^2.2.0",
-    "lodash": "^2.4.1",
+    "lodash.assign": "^4.0.4",
+    "lodash.filter": "^4.2.0",
+    "lodash.foreach": "^4.1.0",
+    "lodash.isarray": "^4.0.0",
+    "lodash.isempty": "^4.1.2",
+    "lodash.isundefined": "^3.0.1",
+    "lodash.rest": "^4.0.1",
+    "lodash.slice": "^4.0.2",
     "moment": "^2.7.0",
     "shelljs": "^0.3.0",
     "tinycolor": "0.0.1"

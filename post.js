@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 
-var _     = require('lodash'),
-    cli   = require('commander'),
-    fs    = require('fs'),
-    path  = require('path'),
-    Posts = require('./lib/posts.js');
+var cli = require('commander');
+var fs = require('fs');
+var path = require('path');
+var slice = require('lodash.slice');
+
+var Posts = require('./lib/posts.js');
 
 /**
  * Utility functions.
@@ -55,7 +56,7 @@ var POSTS_PATH = path.resolve(config.source, '_posts'),
  * that command and store them in variables for later.
  */
 var command = process.argv[2],
-    args    = _.rest(process.argv, 3);
+    args    = slice(process.argv, 3);
 
 // Set up command line interface
 cli
